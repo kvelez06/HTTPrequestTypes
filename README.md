@@ -1,0 +1,2 @@
+# HTTPrequestTypes
+http request types
