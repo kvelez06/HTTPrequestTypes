@@ -30,3 +30,20 @@ function sendTweet() {
 
 let tweetButton = document.getElementById("tweet-submit");
 tweetButton.addEventListener("click", sendTweet)
+
+
+function deleteTweet() {
+    let ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200 ){
+            console.log(this.responseText);
+        } else if(this.readyState != 4) {
+            console.log("Loading...");
+        } else {
+            console.log("Delete Error !");
+        }
+    }
+
+    ajax.open("DELETE", )
+
+}
